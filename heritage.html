@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="苗族服饰文化的活态传承、影像与体验预约表单。"
+    />
+    <title>文化传承｜苗衣纪</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/heritage.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body data-page="heritage">
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header dark-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">苗</span
+        ><span><b>苗衣纪</b><small>MIAO ATTIRE ARCHIVE</small></span></a
+      >
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        菜单
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="主导航">
+        <a href="index.html">首页</a><a href="history.html">历史与形制</a
+        ><a href="patterns.html">纹样与配饰</a
+        ><a href="heritage.html" aria-current="page">文化传承</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="heritage-hero">
+        <img
+          src="images/danjiang-festival.jpg"
+          alt="节庆中佩戴银饰的苗族女性"
+        />
+        <div class="heritage-hero-copy reveal">
+          <p class="eyebrow">CHAPTER 03</p>
+          <h1>文化传承</h1>
+          <p>传统服饰只有回到人的生活、手艺与节日里，才会继续生长。</p>
+        </div>
+      </section>
+
+      <section class="section living-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow ink">活态文化</p>
+          <h2>每一次制作与穿着，都是延续</h2>
+        </div>
+        <div class="living-grid">
+          <article class="reveal">
+            <span>01</span>
+            <h3>家庭中的学习</h3>
+            <p>
+              针法、配色和服饰穿戴常在日常相处中传递。手艺不仅是操作步骤，也包含对场合与礼俗的理解。
+            </p>
+          </article>
+          <article class="reveal">
+            <span>02</span>
+            <h3>节庆中的使用</h3>
+            <p>
+              盛装在苗年、姊妹节、婚礼等场合重新进入公共生活。穿着、歌舞与仪式共同构成可参与的文化现场。
+            </p>
+          </article>
+          <article class="reveal">
+            <span>03</span>
+            <h3>当代设计转化</h3>
+            <p>
+              当代创作者把传统针法、纹样和材质引入新的服装与生活用品。转化应尊重来源，并让传承人参与其中。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="film" class="film-section">
+        <div class="film-heading reveal">
+          <p class="eyebrow">影像 · 鸟舞</p>
+          <h2>让服饰在舞动中展开</h2>
+          <p>
+            视频展示苗族鸟舞表演。羽翼般的裙摆与动作彼此呼应，银饰与织物在运动中呈现完整层次。
+          </p>
+        </div>
+        <div class="film-frame reveal">
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            controls
+            poster="images/hero-festival.jpg"
+            aria-label="苗族鸟舞表演视频"
+          >
+            <source src="video/miao-bird-dance-240p.webm" type="video/webm" />
+            你的浏览器暂不支持视频播放，可直接<a
+              href="video/miao-bird-dance-240p.webm"
+              download
+              >下载视频</a
+            >。
+          </video>
+          <p>
+            <span>自动播放 · 静音 · 循环</span
+            ><a
+              href="https://commons.wikimedia.org/wiki/File:KUVPAUB-_BIRD_STYLE_DANCING_by_Miao-Hmong_Guizhou,_China_performed_at_Smithsonian_Fest._in_DC.webm"
+              target="_blank"
+              rel="noopener"
+              >开放授权影像来源 ↗</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="form-section" id="contact">
+        <div class="form-intro reveal">
+          <p class="eyebrow">体验预约 · 课程表单示例</p>
+          <h2>你想从哪一针开始？</h2>
+          <p>
+            填写兴趣方向，生成一份本地体验预约。此演示表单不会上传个人数据。
+          </p>
+          <div class="form-note">
+            <b>表单包含</b
+            ><span
+              >文本域 · 单选按钮 · 复选框 · 文件域 · 图像域 · 选择列表 ·
+              跳转菜单 · 提交与重置按钮</span
+            >
+          </div>
+        </div>
+        <form
+          id="interest-form"
+          class="interest-form"
+          action="#form-result"
+          method="get"
+        >
+          <div class="form-row">
+            <label
+              >姓名<input
+                type="text"
+                name="name"
+                placeholder="请输入你的姓名"
+                required /></label
+            ><label
+              >电子邮箱<input
+                type="email"
+                name="email"
+                placeholder="name@example.com"
+                required
+            /></label>
+          </div>
+          <fieldset>
+            <legend>最感兴趣的主题</legend>
+            <label class="choice"
+              ><input type="radio" name="topic" value="苗绣" checked /><span
+                >苗绣</span
+              ></label
+            ><label class="choice"
+              ><input type="radio" name="topic" value="银饰" /><span
+                >银饰</span
+              ></label
+            ><label class="choice"
+              ><input type="radio" name="topic" value="服饰形制" /><span
+                >服饰形制</span
+              ></label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>希望参加的内容（可多选）</legend>
+            <label class="choice"
+              ><input type="checkbox" name="activity" value="展览导览" /><span
+                >展览导览</span
+              ></label
+            ><label class="choice"
+              ><input type="checkbox" name="activity" value="刺绣体验" /><span
+                >刺绣体验</span
+              ></label
+            ><label class="choice"
+              ><input type="checkbox" name="activity" value="影像放映" /><span
+                >影像放映</span
+              ></label
+            >
+          </fieldset>
+          <div class="form-row">
+            <label
+              >所在城市<select name="city">
+                <option value="">请选择</option>
+                <option>贵阳</option>
+                <option>凯里</option>
+                <option>长沙</option>
+                <option>其他城市</option>
+              </select></label
+            ><label
+              >上传你的纹样草图<input
+                type="file"
+                name="sketch"
+                accept="image/*"
+            /></label>
+          </div>
+          <label
+            >想了解的内容<textarea
+              name="message"
+              rows="5"
+              placeholder="例如：我想了解蝴蝶纹在不同地区的表现……"
+            ></textarea>
+          </label>
+          <label
+            >快速跳转到<select id="jump-menu" name="jump">
+              <option value="">选择一个页面</option>
+              <option value="index.html">网站首页</option>
+              <option value="history.html">历史与形制</option>
+              <option value="patterns.html">纹样与配饰</option>
+            </select></label
+          >
+          <div class="form-actions">
+            <input
+              class="image-submit"
+              type="image"
+              src="images/send-button.svg"
+              alt="提交预约"
+            /><button class="button button-outline" type="reset">
+              重置表单
+            </button>
+          </div>
+          <p
+            id="form-result"
+            class="form-result"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="index.html"
+          ><span class="brand-mark">苗</span
+          ><span><b>苗衣纪</b><small>MIAO ATTIRE ARCHIVE</small></span></a
+        >
+      </div>
+      <div>
+        <p>中国传统服饰文化主题网站</p>
+        <p>课程作业 · HTML + CSS + JavaScript</p>
+      </div>
+      <div class="footer-links">
+        <a href="docs/layouts.html">平面布局图</a
+        ><a href="mailto:student@example.com">E-mail 联系</a>
+      </div>
+      <p class="copyright">
+        © <span data-year></span> 苗衣纪 · 仅用于课程学习与文化传播
+      </p>
+    </footer>
+  </body>
+</html>
